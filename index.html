@@ -38,22 +38,22 @@
 
     <p>HTML</p>
     <div class="container">
-      <div class="skills html" style="width: 0%">0%</div>
+      <div class="skills html" id="html" style="width: 0%">0%</div>
     </div>
 
     <p>CSS</p>
     <div class="container">
-      <div class="skills css" style="width: 0%">0%</div>
+      <div class="skills css" id="css" style="width: 0%">0%</div>
     </div>
 
     <p>JavaScript</p>
     <div class="container">
-      <div class="skills js" style="width: 0%">0%</div>
+      <div class="skills js" id="javaScript" style="width: 0%">0%</div>
     </div>
 
     <p>PHP</p>
     <div class="container">
-      <div class="skills php" style="width: 0%">0%</div>
+      <div class="skills php" id="php" style="width: 0%">0%</div>
     </div>
     <script>
       const linkedinProfile = {
@@ -94,6 +94,18 @@
       };
 
       // EJERCICIO:  Tú código a partir de aquí
+
+      document.querySelector("#html").textContent = `${linkedinProfile.skillsLevel.HTML}%`;
+      document.querySelector("#html").style.width = `${linkedinProfile.skillsLevel.HTML}%`; 
+
+      document.querySelector("#css").textContent = `${linkedinProfile.skillsLevel.CSS}%`;
+      document.querySelector("#css").style.width = `${linkedinProfile.skillsLevel.CSS}%`; 
+
+      document.querySelector("#javaScript").textContent = `${linkedinProfile.skillsLevel.JavaScript}%`;
+      document.querySelector("#javaScript").style.width = `${linkedinProfile.skillsLevel.JavaScript}%`; 
+
+      document.querySelector("#php").textContent = `${linkedinProfile.skillsLevel.PHP}%`;
+      document.querySelector("#php").style.width = `${linkedinProfile.skillsLevel.PHP}%`; 
       
 
     </script>
